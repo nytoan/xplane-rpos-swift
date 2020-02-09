@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:xplanecon.xcodeproj">
+      location = "self:/Users/anthony/Desktop/xplanecon/xplane-rpos-swift.xcodeproj">
    </FileRef>
 </Workspace>

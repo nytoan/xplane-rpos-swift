@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92208A5E23F08CB0003AEB63 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92208A5D23F08CB0003AEB63 /* UI.swift */; };
-		92208A6023F08FE8003AEB63 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92208A5F23F08FE8003AEB63 /* Network.swift */; };
-		92208A6223F093A0003AEB63 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92208A6123F093A0003AEB63 /* App.swift */; };
-		92208A6423F095A2003AEB63 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92208A6323F095A2003AEB63 /* Parser.swift */; };
-		9296DBF923EC91F200E3184B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296DBF823EC91F200E3184B /* main.swift */; };
+		92BC408523F0ABBF0008189B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC408023F0ABA70008189B /* Network.swift */; };
+		92BC408623F0ABBF0008189B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC408123F0ABA70008189B /* Parser.swift */; };
+		92BC408723F0ABBF0008189B /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC408223F0ABA70008189B /* UI.swift */; };
+		92BC408823F0ABBF0008189B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC408323F0ABA70008189B /* main.swift */; };
+		92BC408923F0ABBF0008189B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC408423F0ABA70008189B /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,12 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		92208A5D23F08CB0003AEB63 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
-		92208A5F23F08FE8003AEB63 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		92208A6123F093A0003AEB63 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		92208A6323F095A2003AEB63 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		9296DBF523EC91F200E3184B /* xplanecon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xplanecon; sourceTree = BUILT_PRODUCTS_DIR; };
-		9296DBF823EC91F200E3184B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9296DBF523EC91F200E3184B /* xplane-rpos-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "xplane-rpos-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BC408023F0ABA70008189B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		92BC408123F0ABA70008189B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		92BC408223F0ABA70008189B /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		92BC408323F0ABA70008189B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		92BC408423F0ABA70008189B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 		9296DBEC23EC91F200E3184B = {
 			isa = PBXGroup;
 			children = (
-				9296DBF723EC91F200E3184B /* xplanecon */,
+				92BC407F23F0ABA70008189B /* xplane-rpos-swift */,
 				9296DBF623EC91F200E3184B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,29 +57,29 @@
 		9296DBF623EC91F200E3184B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9296DBF523EC91F200E3184B /* xplanecon */,
+				9296DBF523EC91F200E3184B /* xplane-rpos-swift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9296DBF723EC91F200E3184B /* xplanecon */ = {
+		92BC407F23F0ABA70008189B /* xplane-rpos-swift */ = {
 			isa = PBXGroup;
 			children = (
-				9296DBF823EC91F200E3184B /* main.swift */,
-				92208A6123F093A0003AEB63 /* App.swift */,
-				92208A6323F095A2003AEB63 /* Parser.swift */,
-				92208A5D23F08CB0003AEB63 /* UI.swift */,
-				92208A5F23F08FE8003AEB63 /* Network.swift */,
+				92BC408023F0ABA70008189B /* Network.swift */,
+				92BC408123F0ABA70008189B /* Parser.swift */,
+				92BC408223F0ABA70008189B /* UI.swift */,
+				92BC408323F0ABA70008189B /* main.swift */,
+				92BC408423F0ABA70008189B /* App.swift */,
 			);
-			path = xplanecon;
+			path = "xplane-rpos-swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9296DBF423EC91F200E3184B /* xplanecon */ = {
+		9296DBF423EC91F200E3184B /* xplane-rpos-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9296DBFC23EC91F200E3184B /* Build configuration list for PBXNativeTarget "xplanecon" */;
+			buildConfigurationList = 9296DBFC23EC91F200E3184B /* Build configuration list for PBXNativeTarget "xplane-rpos-swift" */;
 			buildPhases = (
 				9296DBF123EC91F200E3184B /* Sources */,
 				9296DBF223EC91F200E3184B /* Frameworks */,
@@ -89,9 +89,9 @@
 			);
 			dependencies = (
 			);
-			name = xplanecon;
+			name = "xplane-rpos-swift";
 			productName = xplanecon;
-			productReference = 9296DBF523EC91F200E3184B /* xplanecon */;
+			productReference = 9296DBF523EC91F200E3184B /* xplane-rpos-swift */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9296DBF023EC91F200E3184B /* Build configuration list for PBXProject "xplanecon" */;
+			buildConfigurationList = 9296DBF023EC91F200E3184B /* Build configuration list for PBXProject "xplane-rpos-swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9296DBF423EC91F200E3184B /* xplanecon */,
+				9296DBF423EC91F200E3184B /* xplane-rpos-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -132,11 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92208A6023F08FE8003AEB63 /* Network.swift in Sources */,
-				92208A6223F093A0003AEB63 /* App.swift in Sources */,
-				92208A6423F095A2003AEB63 /* Parser.swift in Sources */,
-				9296DBF923EC91F200E3184B /* main.swift in Sources */,
-				92208A5E23F08CB0003AEB63 /* UI.swift in Sources */,
+				92BC408623F0ABBF0008189B /* Parser.swift in Sources */,
+				92BC408523F0ABBF0008189B /* Network.swift in Sources */,
+				92BC408823F0ABBF0008189B /* main.swift in Sources */,
+				92BC408923F0ABBF0008189B /* App.swift in Sources */,
+				92BC408723F0ABBF0008189B /* UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9296DBF023EC91F200E3184B /* Build configuration list for PBXProject "xplanecon" */ = {
+		9296DBF023EC91F200E3184B /* Build configuration list for PBXProject "xplane-rpos-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9296DBFA23EC91F200E3184B /* Debug */,
@@ -290,7 +290,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9296DBFC23EC91F200E3184B /* Build configuration list for PBXNativeTarget "xplanecon" */ = {
+		9296DBFC23EC91F200E3184B /* Build configuration list for PBXNativeTarget "xplane-rpos-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9296DBFD23EC91F200E3184B /* Debug */,
