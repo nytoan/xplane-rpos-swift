@@ -9,9 +9,16 @@
 import Foundation
 import Network
 
+enum NetworkState {
+    case subscribing(String),
+    tryToListen,
+    listening,
+    error(String)
+}
+
 protocol NetworkDelegate: class {
     func network(network: Network, getData data: Data)
-    func network(network: Network, stateChanged message: String)
+    func network(network: Network, stateChanged state: NetworkState)
 }
 
 class Network {
@@ -24,6 +31,8 @@ class Network {
     }
     
     func createServer() {
+        self.delegate?.network(network: self, stateChanged: .tryToListen)
+        
         sleep(1)
         
         let server: NWListener?
@@ -56,11 +65,9 @@ class Network {
             server?.stateUpdateHandler = { state in
                 switch state {
                 case .ready:
-                    self.delegate?.network(network: self, stateChanged: "Listening to X-Plane")
-                case .cancelled:
-                    self.delegate?.network(network: self, stateChanged: "Server cancelled")
+                    self.delegate?.network(network: self, stateChanged: .listening)
                 case .failed(let error):
-                    self.delegate?.network(network: self, stateChanged: "Can't listen: \(error.debugDescription)")
+                    self.delegate?.network(network: self, stateChanged: .error(error.debugDescription))
                     self.createServer()
                 default:
                     break
@@ -73,7 +80,7 @@ class Network {
     }
 
     func subscribe() {
-        self.delegate?.network(network: self, stateChanged: "Try to connect to X-Plane at \(self.ip)...")
+        self.delegate?.network(network: self, stateChanged: .subscribing(ip))
         
         let start = "RPOS\010\0"
         var data = Data()
@@ -91,10 +98,9 @@ class Network {
                     client.forceCancel()
                 }))
             case .cancelled:
-                self.delegate?.network(network: self, stateChanged: "Try to listening to X-Plane data...")
                 self.createServer()
             case .failed(let error):
-                self.delegate?.network(network: self, stateChanged: error.debugDescription)
+                self.delegate?.network(network: self, stateChanged: .error(error.debugDescription))
             default:
                 break
             }
